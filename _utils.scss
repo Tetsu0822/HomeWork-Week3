@@ -1,0 +1,299 @@
+/* 通用格式 */
+.text {
+    &-sm {
+        font-size: 14px;
+    }
+    &-white {
+        color: var(--neutral-0);
+    }
+    &-neutral-500 {
+        color: var(--neutral-500);
+    }
+    &-neutral-600 {
+        color: var(--neutral-600);
+    }
+    &-neutral-900 {
+        color: var(--neutral-900);
+    }
+    &-primary-400 {
+        color: var(--primary-400);
+    }
+    &-danger-300 {
+        color: var(--danger-300);
+    }
+    &-center {
+        text-align: center;
+    }
+}
+
+.fw {
+    &-400 {
+        font-weight: 400;
+    }
+    &-700 {
+        font-weight: 700;
+    }
+}
+
+.lh-120 {
+    line-height: 1.2;
+}
+
+.bg {
+    &-white {
+        background-color: var(--neutral-0);
+    }
+    &-primary-100 {
+        background-color: var(--primary-100);
+    }
+    &-primary-200 {
+        background-color: var(--primary-200);
+    }
+    &-img {
+        background-color: #F0F3F7;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+[class*="col-"] {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.col {
+    &-1 {
+        width: calc( 100% / 12 );
+    }
+    &-2 {
+        width: calc( 100% / 12 * 2);
+    }
+    &-3 {
+        width: calc( 100% / 12 * 3);
+    }
+    &-4 {
+        width: calc( 100% / 12 * 4);
+    }
+    &-5 {
+        width: calc( 100% / 12 * 5);
+    }
+    &-6 {
+        width: calc( 100% / 12 * 6);
+    }
+    &-7 {
+        width: calc( 100% / 12 * 7);
+    }
+    &-8 {
+        width: calc( 100% / 12 * 8);
+    }
+    &-9 {
+        width: calc( 100% / 12 * 9);
+    }
+    &-10 {
+        width: calc( 100% / 12 * 10);
+    }
+    &-11 {
+        width: calc( 100% / 12 * 11);
+    }
+    &-12 {
+        width: 100%;
+    }
+}
+
+.m-4 {
+    margin: 4px;
+}
+
+.ms-24 {
+    margin-left: 24px;
+}
+
+.me {
+    &-8 {
+        margin-right: 8px;
+    }
+    &-12 {
+        margin-right: 12px;
+    }
+    &-24 {
+        margin-right: 24px;
+    }
+    &-40 {
+        margin-right: 40px;
+    }
+    &-48 {
+        margin-right: 48px;
+    }
+}
+
+.mb {
+    &-4 {
+        margin-bottom: 4px;
+    }
+    &-8 {
+        margin-bottom: 8px;
+    }
+    &-12 {
+        margin-bottom: 12px;
+    }
+    &-16 {
+        margin-bottom: 16px;
+    }
+    &-24 {
+        margin-bottom: 24px;
+    }
+    &-32 {
+        margin-bottom: 32px;
+    }
+    &-40 {
+        margin-bottom: 40px;
+    }
+    &-46 {
+        margin-bottom: 46px;
+    }
+    &-48 {
+        margin-bottom: 48px;
+    }
+    &-64 {
+        margin-bottom: 64px;
+    }
+}
+
+.p {
+    &-12 {
+        padding: 12px;
+    }
+    &-16 {
+        padding: 16px;
+    }
+}
+
+.pt-32 {
+    padding-top: 32px;
+}
+
+.pb {
+    &-24 {
+        padding-bottom: 24px;
+    }
+    &-48 {
+        padding-bottom: 48px;
+    }
+}
+
+.py {
+    &-0 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    &-7 {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    &-8 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    &-9-5 {
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+    }
+    &-12 {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    &-16 {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    &-24 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    &-32 {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    &-64 {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+}
+
+.gap {
+    &-8 {
+        gap: 8px;
+    }
+    &-24 {
+        gap: 24px;
+    }
+}
+
+.d-flex {
+    display: flex;
+}
+
+.mobile-nav {
+    display: none;
+    @include pad {
+        display: block;
+        ul li a img {
+            margin-left: -12px;
+        }
+    }
+}
+
+.copyright {
+    border-top: 1px solid var(--neutral-300);
+    padding-top: 32px;
+}
+
+.join-title {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-right: 24px;
+    @include pad {
+        font-size: 20px;
+        margin-right: 16px;
+    }
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify {
+    &-between {
+        justify-content: space-between;
+    }
+    &-center {
+        justify-content: center;
+    }
+}
+
+.align-center {
+    align-items:center;
+}
+
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    &-light {
+        border: 1px solid var(--neutral-900);
+    }
+    &-dark {
+        background-color: var(--neutral-900);
+        color: var(--neutral-0);
+    }
+}
